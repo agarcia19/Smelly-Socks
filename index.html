@@ -1,0 +1,30 @@
+<div class="circle" >Alex:] 
+
+  </div>
+  <style>
+.circle{
+  height: 50px;
+  width: 50px;
+  background: #F2BFFE;
+  border-radius:50%;
+  margin: 0 auto;
+  margin-top: 0px;
+  font-family: Courier;
+  font-size:9pt;
+  text-align:center;
+  verticle-align: middle;
+  line-height: 50px;
+  top: 0;
+  left: 0;
+  position: fixed;
+
+}
+ </style>
+
+ <script>
+ 	window.addEventListener("mousemove", function (event){
+  console.log(event.clientX);
+  document.getElementsByClassName("circle")[0].style.top = event.clientY + "px";
+  document.getElementsByClassName("circle")[0].style.left = event.clientX + "px";
+});
+</script>
